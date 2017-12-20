@@ -1,0 +1,40 @@
+{
+    "name": "my first scene",
+    "id": "someID",
+    "objects": [
+        {
+            "id": "1",
+            "size": 1,
+            "type": "planet",
+            "mass": 1.0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "texture": "earthmap1k.jpg"
+        }
+    ]
+}

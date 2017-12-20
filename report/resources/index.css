@@ -1,0 +1,29 @@
+#bgvid {
+  position:absolute;
+  top:50%;
+  left:50%;
+  min-width:100%;
+  min-height:100%;
+  width:auto;
+  height:auto;
+  z-index:-100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/clouds.jpg) no-repeat;
+  background-size: cover;
+  display:block;
+}
+.contain-header {
+  margin-top: -40px;
+}
+.main-header {
+  min-height:100vh;
+  display:block;
+  color:#fff;
+}
+
+.headerTitle {
+  padding-top: 500px;
+}

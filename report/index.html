@@ -1,0 +1,1545 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>PBS Project</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+        /*! Skeleton v2.0.4 | MIT License | http://getskeleton.com/ */
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block;
+            vertical-align: baseline
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b,
+        strong {
+            font-weight: 700
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        img {
+            border: 0
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre {
+            overflow: auto
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        input[type=search] {
+            -webkit-appearance: textfield;
+            box-sizing: content-box
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        legend {
+            border: 0;
+            padding: 0
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        optgroup {
+            font-weight: 700
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        td,
+        th {
+            padding: 0
+        }
+
+        body {
+            font-family: Raleway, sans-serif
+        }
+
+        .container {
+            max-width: 800px
+        }
+
+        .header {
+            margin-top: 6rem;
+            text-align: center
+        }
+
+        .value-prop {
+            margin-top: 1rem
+        }
+
+        .value-props {
+            margin-top: 4rem;
+            margin-bottom: 4rem
+        }
+
+        .docs-header {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            letter-spacing: .2rem;
+            font-weight: 600
+        }
+
+        .docs-section {
+            border-top: 1px solid #eee;
+            padding: 4rem 0;
+            margin-bottom: 0
+        }
+
+        .value-img {
+            display: block;
+            text-align: center;
+            margin: 2.5rem auto 0
+        }
+
+        .example-grid .column,
+        .example-grid .columns {
+            background: #EEE;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: .75rem;
+            font-weight: 600;
+            letter-spacing: .1rem
+        }
+
+        .docs-example .row,
+        .docs-example form,
+        .docs-example.row {
+            margin-bottom: 0
+        }
+
+        .docs-example h1,
+        .docs-example h2,
+        .docs-example h3,
+        .docs-example h4,
+        .docs-example h5,
+        .docs-example h6 {
+            margin-bottom: 1rem
+        }
+
+        .heading-font-size {
+            font-size: 1.2rem;
+            color: #999;
+            letter-spacing: normal
+        }
+
+        .code-example {
+            margin-top: 1.5rem;
+            margin-bottom: 0
+        }
+
+        .code-example-body {
+            white-space: pre;
+            word-wrap: break-word
+        }
+
+        .example {
+            position: relative;
+            margin-top: 4rem
+        }
+
+        .example-header {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: .5rem
+        }
+
+        .example-description {
+            margin-bottom: 1.5rem
+        }
+
+        .example-screenshot-wrapper {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            height: 250px
+        }
+
+        .example-screenshot {
+            width: 100%;
+            height: auto
+        }
+
+        .example-screenshot.coming-soon {
+            width: auto;
+            position: absolute;
+            background: #eee;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px
+        }
+
+        .navbar {
+            display: none;
+            position: absolute
+        }
+
+        @media (min-width:550px) {
+            .header {
+                margin-top: 10rem
+            }
+            .value-props {
+                margin-top: 9rem;
+                margin-bottom: 7rem
+            }
+            .value-img {
+                margin-bottom: 1rem
+            }
+            .example-grid .column,
+            .example-grid .columns {
+                margin-bottom: 1.5rem
+            }
+            .docs-section {
+                padding: 6rem 0
+            }
+            .example-send-yourself-copy {
+                float: right;
+                margin-top: 12px
+            }
+            .example-screenshot-wrapper {
+                position: absolute;
+                width: 48%;
+                height: 100%;
+                left: 0;
+                max-height: none
+            }
+        }
+
+        @media (min-width:750px) {
+            .navbar+.docs-section {
+                border-top-width: 0
+            }
+            .navbar,
+            .navbar-spacer {
+                display: block;
+                width: 100%;
+                height: 6.5rem;
+                background: #eee;
+                z-index: 99;
+                border-bottom: 1px solid #eee
+            }
+            .navbar-spacer {
+                display: none
+            }
+            .navbar-list {
+                list-style: none;
+                margin-bottom: 0
+            }
+            .navbar-item {
+                position: relative;
+                float: left;
+                margin-bottom: 0
+            }
+            .navbar-link {
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: .2rem;
+                margin-right: 35px;
+                text-decoration: none;
+                line-height: 6.5rem;
+                color: #222
+            }
+            .navbar-link.active {
+                color: #33C3F0
+            }
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0
+            }
+            .has-docked-nav .navbar-spacer {
+                display: block
+            }
+            .navbar>.container {
+                width: 80%
+            }
+            .popover.open {
+                display: block
+            }
+            .popover {
+                display: none;
+                position: absolute;
+                background: #fff;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                top: 92%;
+                left: -50%;
+                -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+                -moz-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+                filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1))
+            }
+            .popover-item:first-child .popover-link:after,
+            .popover-item:first-child .popover-link:before {
+                bottom: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none
+            }
+            .popover-item:first-child .popover-link:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #fff;
+                border-width: 10px;
+                margin-left: -10px
+            }
+            .popover-item:first-child .popover-link:before {
+                border-color: rgba(238, 238, 238, 0);
+                border-bottom-color: #eee;
+                border-width: 11px;
+                margin-left: -11px
+            }
+            .popover-list {
+                padding: 0;
+                margin: 0;
+                list-style: none
+            }
+            .popover-item {
+                padding: 0;
+                margin: 0
+            }
+            .popover-link {
+                position: relative;
+                color: #222;
+                display: block;
+                padding: 8px 20px;
+                border-bottom: 1px solid #eee;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: .1rem
+            }
+            .popover-item:first-child .popover-link {
+                border-radius: 4px 4px 0 0
+            }
+            .popover-item:last-child .popover-link {
+                border-radius: 0 0 4px 4px;
+                border-bottom-width: 0
+            }
+            .popover-link:hover {
+                color: #fff;
+                background: #33C3F0
+            }
+            .popover-item:first-child .popover-link:hover:after,
+            .popover-link:hover {
+                border-bottom-color: #33C3F0
+            }
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box
+        }
+
+        .column,
+        .columns {
+            width: 100%;
+            float: left;
+            box-sizing: border-box
+        }
+
+        @media (min-width:400px) {
+            .container {
+                width: 85%;
+                padding: 0
+            }
+        }
+
+        @media (min-width:550px) {
+            .container {
+                width: 80%
+            }
+            .column,
+            .columns {
+                margin-left: 4%
+            }
+            .column:first-child,
+            .columns:first-child {
+                margin-left: 0
+            }
+            .one.column,
+            .one.columns {
+                width: 4.66666666667%
+            }
+            .two.columns {
+                width: 13.3333333333%
+            }
+            .three.columns {
+                width: 22%
+            }
+            .four.columns {
+                width: 30.6666666667%
+            }
+            .five.columns {
+                width: 39.3333333333%
+            }
+            .six.columns {
+                width: 48%
+            }
+            .seven.columns {
+                width: 56.6666666667%
+            }
+            .eight.columns {
+                width: 65.3333333333%
+            }
+            .nine.columns {
+                width: 74%
+            }
+            .ten.columns {
+                width: 82.6666666667%
+            }
+            .eleven.columns {
+                width: 91.3333333333%
+            }
+            .twelve.columns {
+                width: 100%;
+                margin-left: 0
+            }
+            .one-third.column {
+                width: 30.6666666667%
+            }
+            .two-thirds.column {
+                width: 65.3333333333%
+            }
+            .one-half.column {
+                width: 48%
+            }
+            .offset-by-one.column,
+            .offset-by-one.columns {
+                margin-left: 8.66666666667%
+            }
+            .offset-by-two.column,
+            .offset-by-two.columns {
+                margin-left: 17.3333333333%
+            }
+            .offset-by-three.column,
+            .offset-by-three.columns {
+                margin-left: 26%
+            }
+            .offset-by-four.column,
+            .offset-by-four.columns {
+                margin-left: 34.6666666667%
+            }
+            .offset-by-five.column,
+            .offset-by-five.columns {
+                margin-left: 43.3333333333%
+            }
+            .offset-by-six.column,
+            .offset-by-six.columns {
+                margin-left: 52%
+            }
+            .offset-by-seven.column,
+            .offset-by-seven.columns {
+                margin-left: 60.6666666667%
+            }
+            .offset-by-eight.column,
+            .offset-by-eight.columns {
+                margin-left: 69.3333333333%
+            }
+            .offset-by-nine.column,
+            .offset-by-nine.columns {
+                margin-left: 78%
+            }
+            .offset-by-ten.column,
+            .offset-by-ten.columns {
+                margin-left: 86.6666666667%
+            }
+            .offset-by-eleven.column,
+            .offset-by-eleven.columns {
+                margin-left: 95.3333333333%
+            }
+            .offset-by-one-third.column,
+            .offset-by-one-third.columns {
+                margin-left: 34.6666666667%
+            }
+            .offset-by-two-thirds.column,
+            .offset-by-two-thirds.columns {
+                margin-left: 69.3333333333%
+            }
+            .offset-by-one-half.column,
+            .offset-by-one-half.columns {
+                margin-left: 52%
+            }
+        }
+
+        html {
+            font-size: 62.5%
+        }
+
+        body {
+            font-size: 1.5em;
+            line-height: 1.6;
+            font-weight: 400;
+            font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #222
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-weight: 300
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            letter-spacing: -.1rem
+        }
+
+        h2 {
+            font-size: 3.6rem;
+            line-height: 1.25;
+            letter-spacing: -.1rem
+        }
+
+        h3 {
+            font-size: 3rem;
+            line-height: 1.3;
+            letter-spacing: -.1rem
+        }
+
+        h4 {
+            font-size: 2.4rem;
+            line-height: 1.35;
+            letter-spacing: -.08rem
+        }
+
+        h5 {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            letter-spacing: -.05rem
+        }
+
+        h6 {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            letter-spacing: 0
+        }
+
+        @media (min-width:550px) {
+            h1 {
+                font-size: 5rem
+            }
+            h2 {
+                font-size: 4.2rem
+            }
+            h3 {
+                font-size: 3.6rem
+            }
+            h4 {
+                font-size: 3rem
+            }
+            h5 {
+                font-size: 2.4rem
+            }
+            h6 {
+                font-size: 1.5rem
+            }
+        }
+
+        p {
+            margin-top: 0
+        }
+
+        a {
+            color: #1EAEDB
+        }
+
+        a:hover {
+            color: #0FA0CE
+        }
+
+        .button,
+        button,
+        input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            display: inline-block;
+            height: 38px;
+            padding: 0 30px;
+            color: #555;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            cursor: pointer;
+            box-sizing: border-box
+        }
+
+        .button:focus,
+        .button:hover,
+        button:focus,
+        button:hover,
+        input[type=button]:focus,
+        input[type=button]:hover,
+        input[type=reset]:focus,
+        input[type=reset]:hover,
+        input[type=submit]:focus,
+        input[type=submit]:hover {
+            color: #333;
+            border-color: #888;
+            outline: 0
+        }
+
+        .button.button-primary,
+        button.button-primary,
+        input[type=button].button-primary,
+        input[type=reset].button-primary,
+        input[type=submit].button-primary {
+            color: #FFF;
+            background-color: #33C3F0;
+            border-color: #33C3F0
+        }
+
+        .button.button-primary:focus,
+        .button.button-primary:hover,
+        button.button-primary:focus,
+        button.button-primary:hover,
+        input[type=button].button-primary:focus,
+        input[type=button].button-primary:hover,
+        input[type=reset].button-primary:focus,
+        input[type=reset].button-primary:hover,
+        input[type=submit].button-primary:focus,
+        input[type=submit].button-primary:hover {
+            color: #FFF;
+            background-color: #1EAEDB;
+            border-color: #1EAEDB
+        }
+
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=search],
+        input[type=tel],
+        input[type=text],
+        input[type=url],
+        select,
+        textarea {
+            height: 38px;
+            padding: 6px 10px;
+            background-color: #fff;
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            box-shadow: none;
+            box-sizing: border-box
+        }
+
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=search],
+        input[type=tel],
+        input[type=text],
+        input[type=url],
+        textarea {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none
+        }
+
+        textarea {
+            min-height: 65px;
+            padding-top: 6px;
+            padding-bottom: 6px
+        }
+
+        input[type=email]:focus,
+        input[type=number]:focus,
+        input[type=password]:focus,
+        input[type=search]:focus,
+        input[type=tel]:focus,
+        input[type=text]:focus,
+        input[type=url]:focus,
+        select:focus,
+        textarea:focus {
+            border: 1px solid #33C3F0;
+            outline: 0
+        }
+
+        label,
+        legend {
+            display: block;
+            margin-bottom: .5rem;
+            font-weight: 600
+        }
+
+        fieldset {
+            padding: 0;
+            border-width: 0
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            display: inline
+        }
+
+        label>.label-body {
+            display: inline-block;
+            margin-left: .5rem;
+            font-weight: 400
+        }
+
+        ul {
+            list-style: circle inside
+        }
+
+        ol {
+            list-style: decimal inside
+        }
+
+        ol,
+        ul {
+            padding-left: 0;
+            margin-top: 0
+        }
+
+        ol ol,
+        ol ul,
+        ul ol,
+        ul ul {
+            margin: 1.5rem 0 1.5rem 3rem;
+            font-size: 90%
+        }
+
+        li {
+            margin-bottom: 1rem
+        }
+
+        code {
+            padding: .2rem .5rem;
+            margin: 0 .2rem;
+            font-size: 90%;
+            white-space: nowrap;
+            background: #F1F1F1;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px
+        }
+
+        pre>code {
+            display: block;
+            padding: 1rem 1.5rem;
+            white-space: pre
+        }
+
+        td,
+        th {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #E1E1E1
+        }
+
+        td:first-child,
+        th:first-child {
+            padding-left: 0
+        }
+
+        td:last-child,
+        th:last-child {
+            padding-right: 0
+        }
+
+        .button,
+        button {
+            margin-bottom: 1rem
+        }
+
+        fieldset,
+        input,
+        select,
+        textarea {
+            margin-bottom: 1.5rem
+        }
+
+        blockquote,
+        dl,
+        figure,
+        form,
+        ol,
+        p,
+        pre,
+        table,
+        ul {
+            margin-bottom: 2.5rem
+        }
+
+        .u-full-width {
+            width: 100%;
+            box-sizing: border-box
+        }
+
+        .u-max-full-width {
+            max-width: 100%;
+            box-sizing: border-box
+        }
+
+        .u-pull-right {
+            float: right
+        }
+
+        .u-pull-left {
+            float: left
+        }
+
+        hr {
+            margin-top: 3rem;
+            margin-bottom: 3.5rem;
+            border-width: 0;
+            border-top: 1px solid #E1E1E1
+        }
+
+        .container:after,
+        .row:after,
+        .u-cf {
+            content: "";
+            display: table;
+            clear: both
+        }
+    </style>
+    <link href="resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <link href="resources/index.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <body>
+
+        <div class="container">
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#intro">Intro</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#Implementation">Implementation</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#nbodyresults">N-body results</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#collisionResults">Collision results</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#finalResults">Final results</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content contain-header">
+            <div class="container">
+                <div class="row main-header">
+
+                    <video autoplay loop poster="images/space.png" id="bgvid">
+                        <source src="videos/header.mp4" type="video/mp4" />
+                    </video>
+
+                    <div class="headerTitle">
+                        <h1 class="title">Asteroidfield Simulation</h1>
+                        <p>
+                            by Alexander Lelidis, Andreas Emch and Uros Tesic
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="header" id="intro">
+                <p>
+                    Simulating planets and asteroids in space is an intersecting multi dimensional challenge. Due to the nature of the set up,
+                    we have to solve a few hard challenges to achieve a real time engine. The first part of the problem is
+                    the numerical computation of gravitational forces. This problem is today only solved analytically for
+                    2 bodies. Since our objective is to have an asteroid field we using numerical methods to approximated
+                    these forces. Once the bodies start to move around the second challenge is to handle collisions and compute
+                    physically correct responses. Again this needs to be done in rather fast fashion to be able to run in
+                    real time.
+                </p>
+            </section>
+            <div class="docs-section" id="overview">
+                <h3 class="section-heading">Overview</h3>
+                <p class="section-description">
+                    To achieve the objective of having a real time n-body engine with collision detection, we are going to use a few libraries
+                    to not reinvent the wheel. Starting with the render engine openSceneGraph [
+                    <a href="#osg">1</a>], which we are using to visualize our simulation. This is a reasonable trade of due to the objective
+                    is to create the simulation engine and not to learn openGL. For our arithmetic operations we rely on
+                    the fast linear algebra library Eigen [
+                    <a href="#eigen">2</a>], which we are using for matrix and vector operations. We included the computational geometry algorithms
+                    library (CGAL)[
+                    <a href="#cgal">3</a>] into our project to compute the convex hull of our models. Each rendered object in our implementation
+                    has two meshes, one detailed mesh for rendering purpose and the simpler mesh of the convex hull for simulation
+                    purpose. To not recompile our code every time we want to run a new the engine with a different set of
+                    parameters, we include the json libary [
+                    <a href="#json">4</a>]. Now we are able to define our parameters in scene json files and load them everytime we run the
+                    program. Finally, we are using boost [
+                    <a href="#boost">5</a>] to read input parameters from the user.
+                </p>
+                <p class="section-description">
+                    With a high-level perspective our code has the following pipeline. The first step before entering the simulation loop is
+                    to load all the obj models, textures and bump maps specified in the scene.json and create objects with
+                    the specified physical properties like angular rotation or linear velocity. The next step is to compute
+                    the convex hull for every mesh to speed up the simulation. Now we enter the simulation loop:
+                    <pre>
+            <code>
+while(true) {
+    // simulate on step
+    nbodyManager->simulateStep(dt, this->_spaceObjects);
+
+    // check for collisions
+    collisionManager->handleCollisions(dt, this->_spaceObjects);
+
+}
+            </code>
+            </pre> The infinite loop consists of two steps, first simulate a single step of movement using the n body manager
+                    and afterwards use the collision manager to handle possible collision. In the next section we are going
+                    to elaborate the implementation details of the n-body manager and the collision manager.
+                </p>
+
+            </div>
+            <div class="docs-section" id="Implementation">
+                <h3 class="section-heading">Implementation</h3>
+                <h4 class="section-heading">Basic-Setup</h4>
+                <p class="section-description">
+                    For seeing how to setup the project, please read the instructions and needed frameworks in our README in the code-location.
+                    We have developed with Windows and Ubuntu, for both systems the corresponding libraries are mentioned
+                    in the README.
+                </p>
+                <p class="section-description">
+                    In principal, the most important methods are commented. For most of the classes or function it is rather obvious what should
+                    be done, since we structured it granularely with the size of this project. Here is a very quick overview
+                    of the structure of our project:
+                    <ul>
+                        <li>Core (main-folder): Main files with the main-entry point for the program</li>
+                        <li>Graphics: All graphic implementation. For example GJK, EPA, convex-hull, and helper functions.</li>
+                        <li>OSG: All rendering-relevant implementations for OpenSceneGraph
+                            <ul>
+                                <li>Events: Keyboard handling</li>
+                                <li>Particles: Particle-shader for the space-ship</li>
+                                <li>Shaders: Shaders for the bumpmap, sun-lightning</li>
+                                <li>Visitors: Visitors needed for OSG to extract some information (vertex-list, convex-hull,
+                                    ...)</li>
+                            </ul>
+                        </li>
+                        <li>Physics: Simulation-, N-Body- and Collision-manager.</li>
+                        <li>Scene: Needed objects to create a simulation scene.</li>
+                    </ul>
+                    The demo-scenes can be found in the code-directory.
+                </p>
+                <p class="section-description">
+                    The paths to load the models etc is written dynamically with CMake into the config.h file. The paths point to the directory
+                    "data" in the code repository.
+                </p>
+                <p class="section-description">
+                    Once compiled, our program can be started with several parameters. These can be looked up via "asteroid_field.exe --help".
+                    <ul>
+                        <li>-h [ --help ]: Help screen</li>
+                        <li>-s [ --spheres ] arg (=10): Spheres</li>
+                        <li>-a [ --asteroids ] arg (=0): Asteroids</li>
+                        <li>-e [ --emitter ] arg (=sphere): Emitter</li>
+                        <li>-r [ --rand ] arg (=1): Random</li>
+                        <li>-g [ --gameplay ] arg (=0): Gameplay</li>
+                        <li>-f [ --saveFrames ] arg (=0): Save frame sto image files</li>
+                        <li>-j [ --sceneJson ] arg: Json file containing the scene</li>
+                    </ul>
+                </p>
+                <h4 class="section-heading">N-Body manager</h4>
+                <p class="section-description">
+                    To be able to simulate movement in space we need to implement Newtons first law of gravity, which gives us pairwise forces
+                    between two masses. $$ \vec{F} = G \cdot \frac{m_1 \cdot m_1}{|\vec{r}|^3} \vec{r} $$ where \(m_1\) and
+                    \(m_2\) are the masses and \(\vec{r}\) is the distance between the centroid of the objects: G is the
+                    gravitational constant \(6.67408 \times 10^{-11} \). Combined with the famous second law \(F = ma\) we
+                    can set up the following algorithm:
+
+                    <pre>
+            <code>
+                # compute the forces
+                for each object i:
+                    for each object j, i != j:
+                        vector d = distance(i.getCentroid, j.getCentorid) 
+                        vector r = d.norm() * d.norm()
+                        f = (G * i.getMass() * j.getMass()) / (r);
+                        i.addForces(f)
+
+                # update the physical attributes
+                for each object i:
+                    vector a = i.getForce() / i.getMass();
+                    vector v =i.getLinearVelocity() + (dt * a);
+                    i.setLinearVelocity(v);
+
+                    vector dtv = dt * v;
+                    vector p = i.getPosition() + dtv;
+
+                    i.setPosition(p)
+            </code>
+            </pre>
+
+
+                    <h5 class="section-heading">Accelerations</h4>
+                        <img src="images/spatial_grid.jpg" height="100" width="100" alt="Spatial Grid" class="img-responsive">
+                        <p class="section-description">
+                            The easy and naive way uses a \(O(n^2)\) runtime. For smaller scenes this might suit absolutely and will effect the running
+                            time not significantly, but the result is still more accurate. However, for many objects, this
+                            might become a problem. Therefore we tried out two different acceleration-methods:
+                            <ul>
+                                <li>We used Open-MP for parallel-loops in C++: This already significantly improved the running
+                                    speed (by a factor of 4), even thought it is still \(O(n^2)\)</li>
+                                <li>A uniform spatial grid is generated (3 times as big as the scene => improvement could be
+                                    to let the user define it in the scene). Then in the first step, for each object it's
+                                    radius of affect is used to decide with a threshold how many neighboring cells are affected.
+                                    During simulation time, the cells are updated with a list of which objects are affecting
+                                    this cell. In this way, only the objects with a high enough influence are used for the
+                                    calculations. The runtime for this case is \(O(n + k)\), with \(n\) being the number
+                                    of objects and \(k\) being the number of influencers in the cells.</li>
+                            </ul>
+                        </p>
+                </p>
+                <h4 class="section-heading">Collision manager</h4>
+                <p class="section-description">
+                    The collision detection consists of 3 main phases. The broad phase, the narrow phase and the collision response.
+
+                    <h5 class="section-heading">Broad phase (prune and sweep algorithm)</h5>
+                    <img src="images/collision_broad.png" height="300" alt="Broad phase" class="img-responsive">
+                    <p class="section-description">
+                        The first phase implements the prune and sweep algorithm, which objective it is to reduce number of number of computational
+                        expensive narrow collision checks. We start by computing a axis aligned bounding box for each model
+                        we are simulating. This can be done is quite fast and the check for intersection is also easy to
+                        implement. Now we are sorting the element intervals for each axis x,y and z and check if there are
+                        overlaps of object intervals. If there is an overlap in all 3 axis we know that the two AABB are
+                        intersecting and we can continue with the narrow phase checks. Due to the fact that we are storing
+                        the lists for each axis and exploiting temporal coherence the resorting can be done in a few computational
+                        steps. Since it is unlikely that the objects move significatly between two steps. (Quick sidenote:
+                        first, we defined all heavy scenes on the XY-plane, resulting to have this algorithm in the worst
+                        time complexity of \(O(n^2)\), because on z-axis each object is a possible collision with each other.
+                        Without hierarchically solving this, we simply rotated the scenes to be not aligned with an axis)
+                    </p>
+                    <h5 class="section-heading">Narrow phase (GJK and EPA)</h5>
+                    <p class="section-description">
+                        For the narrow phase in the collision detection, we implemented the GJK (Gilbert–Johnson–Keerthi distance algorithm) algorithm
+                        with the EPA (Expanding Polytope Algorithm). GJK is used to build up iteratively the Minkowski-sum,
+                        without the need to calculate the whole. In the first draft we've been using the Minkowski-sum from
+                        CGAL, which is calculating the whole sum. This resulted in a drastically bad runtime. We could significantly
+                        reduce the runtime by the iterative implementation, since this algorithm is being said to be with
+                        a constant running time. A good property of the algorithm is that
+                    </p>
+                    <img src="images/collision_gjk.png" alt="GJK-Algorithm" class="img-responsive">
+                    <p class="section-description">
+                        The steps for the GJK are basically the same as on the course slides.
+
+                        <ul>
+                            <li>Initialize a random direction: get the furthest point from one convex-hull and from the other
+                                the furthest in the opposite direction</li>
+                            <li>Repeat until convergence
+                                <ul>
+                                    <li>Update the simplex with max 4 points</li>
+                                    <li>Check if the origin is included or max-iteration steps are passed => stop with collision
+                                        by starting EPA</li>
+                                    <li>Search next point on support-function with directions to the origin.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                    <p class="section-description">
+                        When GJK has detected a collision, EPA needs to be run to find the correct intersection vector. Because EPA works now on
+                        a real polytope instead of only a simplex, we need to convert this first. In the normal case, our
+                        simplex has four points. In this case it can be easily created a tetrahedron with the four faces
+                        and the correct orientation of the normal.
+                    </p>
+                    <img src="images/collision_epa.png" alt="EPA" class="img-responsive">
+                    <p class="section-description">
+                        The EPA is used to find the corresponding intersection vector between the objects. This will be used later for calculating
+                        the correct collision-response. Following the steps for the EPA, which starts with the simplex found
+                        during the GJK:
+
+                        <ul>
+                            <li>Repeat until convergence
+                                <ul>
+                                    <li>Get closest face to the origin</li>
+                                    <li>Get the support-function into the direction of the faces normal</li>
+                                    <li>Expand the polytope with point from support-function and remove redundant faces</li>
+                                    <li>If the expansion is below a given threshold or the point has already been added, it converged
+                                        and can go to the final step</li>
+                                </ul>
+                            </li>
+                            <li>Calculate the intersection point on each object with the barycentric point from the intersecton-polytype</li>
+                        </ul>
+
+                        For expanding the polytope with a new support-point, following steps need to be done in order to still have a convex polytope:
+                        <ul>
+                            <li>Detect each face which can be "seen" from the point</li>
+                            <li>Remove each of those faces, but remember the removed edges. Only if an edge is removed twice,
+                                it will not be contained in the new polytope. If it is removed only once, it is on the boarder
+                                of the removed faces.</li>
+                            <li>With the remaining boarders (which have removed exactly once) and the added point, all new faces
+                                can be generated</li>
+                        </ul>
+
+                        At the end, we have the global intersection vector, which can be further processed when calculating the collision-response.
+                    </p>
+
+                    <h5 class="section-heading">Collision-response</h5>
+                    <p class="section-description">
+                        <p class="section-description">
+                            <p>Narrow phase creates a collision object with the colliding objects, intersection points, contact
+                                normal and a intersection vector. This is all data that we need to calculate collision response
+                                for arbitrary geometry. First, we must calculate impact speed of the colliding points on
+                                the bodies. It is the sum of four different velocities projected to the contact normal:
+                                <ul>
+                                    <li> First body's linear velocity
+                                        <li> Second body's linear velocity
+                                            <li> Velocity of first body's intersection point due to rotation
+                                                <li> Velocity of second body's intersection point due to rotation
+                                </ul>
+                                We use this speed to calculate outgoing velocity, which is usually only a fraction of it (coefficient of restitution). We
+                                also record velocities perpendicular to the contact normal. They will be important later
+                                when we add friction.</p>
+
+
+                            <p>Considering that we know the needed difference in velocities that we want to attain, we can estimate
+                                the change in linear and angular velocities of bodies. For that we calculate the moment of
+                                inertia in global frame for both bodies. By combining this with the distance of contact points
+                                from the centroid point, we determine how easy the body is to rotate. We can combine this
+                                with masses (which determine linear inertness - how easy bodies are to move), to calculate
+                                total response per unit of impulse. Because we know the difference in velocities, we can
+                                calculate the total change of impulse needed, and distribute it among the four components
+                                (translation and rotation of both bodies).</p>
+
+                            <p>Friction complicates things a bit, but by recording projections of the closing velocity along
+                                the other two axes of the contact base, we can try to kill them too using a change in impulse.
+                                However, there is a limitation. Friction is a reactive force. It cannot make velocities point
+                                in the opposite direction. If we detect that case, we set the corresponding component to
+                                0.</p>
+
+                            <p>Now we have a change in linear and angular velocity. Linear velocity is easy to convert to actual
+                                coordinates by integration in the update step. However, for rotation, we must integrate angular
+                                velocity to obtain the change of angle in the time span, and then calculate and apply a rotation
+                                quaternion.</p>
+
+                            <p>The last step involves intersection resolution. We must move objects apart so they don't intersect
+                                each other anymore at the end of the frame. We do that by distributing the translational
+                                and rotational movement based on objects' inertness. Objects which rotate easily will have
+                                a higher rotational response, while light objects will be moved further apart. In the end,
+                                both intersection points are moved by a length of intersection vector from each other. The
+                                only thing that objects' inertia determines is the ratio of both bodies' movement.</p>
+
+
+                            <div class="row">
+                                <div class="twentytwenty-container">
+                                    <img src="images/friction.gif" height="300" width="500" alt="With friction" class="img-responsive">
+                                    <img src="images/nofriction.gif" height="300" width="500" alt="No friction" class="img-responsive">
+                                </div>
+                                <br>
+
+                                <p>
+                                    This image compares the collision response of two planets with and without friction. Note that friction takes into consideration
+                                    velocity components which aren't along the collision normal. These components are responsible
+                                    for rotation.
+                                </p>
+                            </div>
+                        </p>
+                    </p>
+            </div>
+            <div class="docs-section" id="nbodyresults">
+                <h3 class="section-heading">N-body results</h3>
+                <p class="section-description">
+                    In this section we are going to display our results for different parameters. We start with very simple settings and increase
+                    the number and complexity.
+                </p>
+                <h4 class="section-heading">Circular orbit (2 bodies)</h4>
+                <p class="section-description">
+                    The goal of this experiment is to get a planet orbiting another planet in a circular way. Therefor we create a scene file
+                    (circularOrbit.json) with a sun (m = 20.0) and a earth (m = 0.1). The sun has zero linear an angular
+                    velocity and the earth $$ \vec{p} = \begin{pmatrix} -5.0 \\ 0 \\ 0 \end{pmatrix} \vec{lv} = \begin{pmatrix}
+                    0.0 \\ 2.0 \\ 0 \end{pmatrix} $$
+                </p>
+                <div class="row">
+                    <video autoplay loop width="1000">
+                        <source src="videos/circularOrbit.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <hr>
+                <h4 class="section-heading">Elliptical orbit (2 bodies)</h4>
+                <p class="section-description">
+                    The goal of this experiment is to get a planet orbiting another planet in a elliptic way. Therefore we create a scene file
+                    (ellipticalOrbit.json) with a sun (m = 1000.0) and a earth (m = 0.1). The sun has zero linear an angular
+                    velocity and the earth $$ \vec{p} = \begin{pmatrix} -5.0 \\ 0 \\ 0 \end{pmatrix} \vec{lv} = \begin{pmatrix}
+                    0.0 \\ 16.7299316 \\ 0 \end{pmatrix} $$
+                </p>
+                <div class="row">
+                    <video autoplay loop width="1000">
+                        <source src="videos/ellipticalOrbit.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <hr>
+
+                <h4 class="section-heading">Figure eight (3 bodies)</h4>
+                <p class="section-description">
+                    The goal of this experiment is test stable 3 body configuration. Therefor we create a scene file (figureEight.json) with
+                    three planets each having a mass of one and the following positions and velocities. $$ \vec{p_1} = \begin{pmatrix}
+                    -1.0 \\ 0 \\ 0 \end{pmatrix} \vec{p_2} = \begin{pmatrix} 1.0 \\ 0 \\ 1.0 \end{pmatrix} \vec{p_3} = \begin{pmatrix}
+                    1.0 \\ 0 \\ 0 \end{pmatrix} \vec{lv_1} = \begin{pmatrix} 0.347111 \\ 0.532728 \\ 0 \end{pmatrix} \vec{lv_2}
+                    = \begin{pmatrix} 0.347111 \\ 0.532728 \\ 0 \end{pmatrix} \vec{lv_3} = \begin{pmatrix} -0.694222 \\ -1.065456
+                    \\ 0 \end{pmatrix} $$
+                </p>
+                <div class="row">
+                    <video autoplay loop width="1000">
+                        <source src="videos/figureEight.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <hr>
+
+
+                <div class="docs-section" id="collisionResults">
+                    <h3 class="section-heading">Collision detection results</h3>
+                    <p class="section-description">
+                        To see that all our parts of the collision detect are correctly working we created a scene rendered with debug informations.
+                        The first thing we add is a visualization of the AABB and color coding, where green means that we
+                        have an intersection in the broad phase, but not the narrow one. Red defines a real collision.
+                    </p>
+
+                    <hr>
+                    <p class="section-description">
+                        The following video show the collision of two asteroids in space.
+                    </p>
+                    <div class="row">
+                        <video autoplay loop width="1000">
+                            <source src="videos/pruneandsweep.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="docs-section" id="finalResults">
+                    <h3 class="section-heading">Final results</h3>
+                    <p class="section-description">
+                        We want to split this section in to two parts. First we tried our implementation in a big scale, by creating a asteroid field
+                        with a spiral pattern and a planet with asteroid belt. To test our collision detect and handling
+                        we create a asteroid field colliding with a planet.
+                    </p>
+                    <div class="row">
+                        <video autoplay loop width="1000" muted>
+                            <source src="videos/galaxy.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <video autoplay loop width="1000" muted>
+                            <source src="videos/rings.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <hr>
+                    <hr>
+                    <p class="section-description">
+                        For the second part we implement a small space game, where the user flies in a aircraft through a meteor field and tries
+                        to survive.
+                    </p>
+                    <div class="row">
+                        <video autoplay loop muted width="1000">
+                            <source src="videos/gameplay.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="docs-section" id="References">
+                    <h3 class="section-heading">References</h3>
+                    <p class="section-description">
+                        <ul>
+
+                            <!-- reference 1 start -->
+                            <li>
+                                <div id="osg">
+                                    <b>[openSceneGraph,1]</b>
+                                </div>
+                                <p>
+                                    OpenSceneGraph is an open source 3D graphics application programming interface, used by application developers in fields
+                                    such as visual simulation, computer games, virtual reality, scientific visualization
+                                    and modeling.
+                                    <br> Online:
+                                    <a href="http://www.openscenegraph.org/" target="_blank">http://www.openscenegraph.org/</a>
+                                    <br> Last accessed: 18. December 2017
+                                </p>
+                                <br>
+                                <br>
+                            </li>
+                            <li>
+                                <div id="eigen">
+                                    <b>[Eigen,2]</b>
+                                </div>
+                                <p>
+                                    Eigen is a high-level C++ library of template headers for linear algebra, matrix and vector operations, geometrical transformations,
+                                    numerical solvers and related algorithms.
+                                    <br> Online:
+                                    <a href="http://eigen.tuxfamily.org/index.php" target="_blank">http://eigen.tuxfamily.org/index.php</a>
+                                    <br> Last accessed: 18. December 2017
+                                </p>
+                                <br>
+                                <br>
+                            </li>
+                            <li>
+                                <div id="cgal">
+                                    <b>[CGAL,3]</b>
+                                </div>
+                                <p>
+                                    The Computational Geometry Algorithms Library is a software library of computational geometry algorithms. While primarily
+                                    written in C++, Scilab bindings and bindings generated with SWIG are also available.
+                                    <br> Online:
+                                    <a href="https://www.cgal.org/" target="_blank">https://www.cgal.org/</a>
+                                    <br> Last accessed: 18. December 2017
+                                </p>
+                                <br>
+                                <br>
+                            </li>
+                            <li>
+                                <div id="json">
+                                    <b>[JSON,4]</b>
+                                </div>
+                                <p>
+                                    JSON for modern C++ code.
+                                    <br> Online:
+                                    <a href="https://nlohmann.github.io/json/" target="_blank">https://nlohmann.github.io/json/</a>
+                                    <br> Last accessed: 18. December 2017
+                                </p>
+                                <br>
+                                <br>
+                            </li>
+                            <div id="boost">
+                                <b>[Boost,5]</b>
+                            </div>
+                            <p>
+                                Boost provides free peer-reviewed portable C++ source libraries
+                                <br> Online:
+                                <a href="http://www.boost.org/" target="_blank">http://www.boost.org/</a>
+                                <br> Last accessed: 18. December 2017
+                            </p>
+                            <br>
+                            <br>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="resources/jquery.event.move.js"></script>
+            <script src="resources/jquery.twentytwenty.js"></script>
+
+
+            <script>
+                $(window).load(function () { $(".twentytwenty-container").twentytwenty({ default_offset_pct: 0.5 }); });
+            </script>
+
+    </body>
+
+</html>

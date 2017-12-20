@@ -1,0 +1,111 @@
+{
+    "name": "my first scene",
+    "id": "someID",
+    "objects": [
+        {
+            "id": "1",
+            "size": 1,
+            "type": "planet",
+            "texture": "earthmap1k.jpg",
+            "bumpmap": "earth_normalmap_1024x512.jpg",
+            "mass": 1.0,
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "id": "2",
+            "size": 1,
+            "type": "planet",
+            "texture": "earthmap1k.jpg",
+            "bumpmap": "earth_normalmap_1024x512.jpg",
+            "mass": 1.0,
+            "position": {
+                "x": 10.0,
+                "y": 0.0,
+                "z": -5.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": -4.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "id": "2",
+            "size": 5.0,
+            "type": "sun",
+            "texture": "sunmap.jpg",
+            "bumpmap": "sunmap_normal.jpg",
+            "mass": 1000.0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "name": "my first scene",
+    "id": "someID",
+    "objects": [
+        {
+            "id": "0",
+            "size": 0.05,
+            "type": "planet",
+            "mass": 1.0,
+            "position": {
+                "x": -1.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": 0.347111,
+                "y": 0.532728,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "texture": "earthmap1k.jpg",
+            "useFollowingRibbon": true,
+            "followingRibbon": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 1.0
+                },
+                "numPoints": 400,
+                "halfWidth": 0.01
+            }
+        },
+        {
+            "id": "1",
+            "size": 0.05,
+            "type": "planet",
+            "mass": 1.0,
+            "position": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": 0.347111,
+                "y": 0.532728,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "texture": "earthmap1k.jpg",
+            "useFollowingRibbon": true,
+            "followingRibbon": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 1.0
+                },
+                "numPoints": 400,
+                "halfWidth": 0.01
+            }
+        },
+        {
+            "id": "2",
+            "size": 0.05,
+            "type": "sun",
+            "texture": "sunmap.jpg",
+            "bumpmap": "sunmap_normal.jpg",
+            "mass": 1.0,
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "ratio": 1.0,
+            "scaling": 1.0,
+            "linearVelocity": {
+                "x": -0.694222,
+                "y": -1.065456,
+                "z": 0.0
+            },
+            "angularVelocity": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "force": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "torque": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useFollowingRibbon": true,
+            "followingRibbon": {
+                "color": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 1.0
+                },
+                "numPoints": 400,
+                "halfWidth": 0.01
+            }
+        }
+    ]
+}

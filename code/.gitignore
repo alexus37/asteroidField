@@ -1,0 +1,4 @@
+config.h
+build/
+.idea
+cmake-build-debug
